@@ -249,30 +249,29 @@ html, body {
   border-color: transparent;
 }
 
-/* Fix WhatsApp floating button */
-.whatsapp-float{
+/* --- Fix flotante WhatsApp (override final) --- */
+a#whatsappFloat.whatsapp-float{
   position: fixed !important;
-  display: grid;               /* asegura caja y centrado */
-  place-items: center;
-  right: 18px;
-  bottom: 18px;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: radial-gradient(120% 120% at 100% 0%, var(--brand-green), #0fb466aa);
-  border: 3px solid #073c28;
-  box-shadow: 0 12px 28px rgba(0,0,0,.35);
-  z-index: 1100;               /* por encima de backdrop(1000) y drawer(1001) */
+  right: 18px !important;
+  bottom: 18px !important;
+  width: 56px !important;
+  height: 56px !important;
+  border-radius: 50% !important;
+  display: grid !important;
+  place-items: center !important;
+  z-index: 1100 !important; /* por encima de backdrop(1000) y drawer(1001) */
 }
-.whatsapp-float::after{
-  content: '✆';
-  font-weight: 900;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
-  font-size: 22px;
-  color: #fff;
+
+a#whatsappFloat.whatsapp-float img{
+  max-width: 60%;
+  max-height: 60%;
+  pointer-events: none;
+}
+
+html, body{
+  transform: none !important;
+  filter: none !important;
+  perspective: none !important;
 }
 
 
