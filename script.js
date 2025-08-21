@@ -217,6 +217,7 @@ function renderPagination() {
         }
       }
       renderView();
+      scrollToProducts();   // 👈 subir al inicio del grid al cambiar de página
     });
   });
 }
@@ -348,4 +349,10 @@ function unlockScroll() {
   document.body.style.width = '';
   window.scrollTo(0, __lockScrollY);
 }
+
+function scrollToProducts() {
+  const el = document.getElementById('productGrid') || document.getElementById('catalogo');
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 
