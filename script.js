@@ -2,7 +2,7 @@
    Configuración
 ============================= */
 const CONFIG = {
-  whatsappNumber: '+584120000000',
+  whatsappNumber: '+584122764504',
   whatsappTextGeneral: 'Hola, me interesa su catálogo de DolarMania.',
 };
 
@@ -348,3 +348,4 @@ function unlockScroll() {
   document.body.style.width = '';
   window.scrollTo(0, __lockScrollY);
 }
+
