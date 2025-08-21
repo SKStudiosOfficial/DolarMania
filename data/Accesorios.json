@@ -1,0 +1,10 @@
+[
+  {
+    "id": "TEL001",
+    "title": "Smartphone Alpha 128GB",
+    "desc": "Pantalla 6.5\", 6GB RAM, 50MP",
+    "price": 149.99,
+    "image": "assets/products/phones/alpha.webp",
+    "category": "Teléfonos"
+  }
+]

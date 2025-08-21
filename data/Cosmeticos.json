@@ -1,0 +1,12 @@
+[
+  { "id": "COS001", "title": "Labial Mate Rojo", "desc": "Duración 24h, hidratante", "price": 9.99, "image": "assets/products/cosmetics/labial1.webp", "category": "Cosméticos" },
+  { "id": "COS002", "title": "Base Líquida Natural", "desc": "Cobertura media, FPS 15", "price": 14.50, "image": "assets/products/cosmetics/base.webp", "category": "Cosméticos" },
+  { "id": "COS003", "title": "Rímel Volumen", "desc": "Resistente al agua", "price": 8.99, "image": "assets/products/cosmetics/rimel.webp", "category": "Cosméticos" },
+  { "id": "COS004", "title": "Sombras 12 Colores", "desc": "Tonos mate y brillantes", "price": 12.00, "image": "assets/products/cosmetics/sombras.webp", "category": "Cosméticos" },
+  { "id": "COS005", "title": "Delineador Líquido", "desc": "Punta fina, color intenso", "price": 6.50, "image": "assets/products/cosmetics/delineador.webp", "category": "Cosméticos" },
+  { "id": "COS006", "title": "Perfume Floral 50ml", "desc": "Notas frescas y cítricas", "price": 25.00, "image": "assets/products/cosmetics/perfume.webp", "category": "Cosméticos" },
+  { "id": "COS007", "title": "Polvo Compacto", "desc": "Acabado natural", "price": 7.50, "image": "assets/products/cosmetics/polvo.webp", "category": "Cosméticos" },
+  { "id": "COS008", "title": "Crema Hidratante 200ml", "desc": "Con aloe vera", "price": 11.00, "image": "assets/products/cosmetics/crema.webp", "category": "Cosméticos" },
+  { "id": "COS009", "title": "Mascarilla Facial", "desc": "Carbón activado", "price": 4.99, "image": "assets/products/cosmetics/mascarilla.webp", "category": "Cosméticos" },
+  { "id": "COS010", "title": "Aceite Capilar", "desc": "Nutre y da brillo", "price": 13.00, "image": "assets/products/cosmetics/aceite.webp", "category": "Cosméticos" }
+]

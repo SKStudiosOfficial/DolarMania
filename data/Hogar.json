@@ -1,0 +1,12 @@
+[
+  { "id": "HOG001", "title": "Licuadora Xpress 1.5L", "desc": "Acero / 2 vasos / 500W", "price": 34.99, "image": "assets/products/home/blender.webp", "category": "Hogar" },
+  { "id": "HOG002", "title": "Aspiradora Compact", "desc": "Ciclónica / 1200W", "price": 59.00, "image": "assets/products/home/vacuum.webp", "category": "Hogar" },
+  { "id": "HOG003", "title": "Microondas Digital 20L", "desc": "Pantalla LED, 700W", "price": 89.00, "image": "assets/products/home/microondas.webp", "category": "Hogar" },
+  { "id": "HOG004", "title": "Cafetera Automática", "desc": "Programable, 1.2L", "price": 45.50, "image": "assets/products/home/cafetera.webp", "category": "Hogar" },
+  { "id": "HOG005", "title": "Plancha a Vapor", "desc": "2000W, suela cerámica", "price": 29.99, "image": "assets/products/home/plancha.webp", "category": "Hogar" },
+  { "id": "HOG006", "title": "Freidora de Aire 5L", "desc": "Sin aceite, digital", "price": 99.00, "image": "assets/products/home/freidora.webp", "category": "Hogar" },
+  { "id": "HOG007", "title": "Batidora de Mano", "desc": "Velocidades ajustables", "price": 19.00, "image": "assets/products/home/batidora.webp", "category": "Hogar" },
+  { "id": "HOG008", "title": "Ventilador de Torre", "desc": "3 velocidades, oscilante", "price": 39.00, "image": "assets/products/home/ventilador.webp", "category": "Hogar" },
+  { "id": "HOG009", "title": "Calefactor Portátil", "desc": "1500W, protección térmica", "price": 42.00, "image": "assets/products/home/calefactor.webp", "category": "Hogar" },
+  { "id": "HOG010", "title": "Horno Eléctrico 30L", "desc": "Temporizador, 1500W", "price": 109.00, "image": "assets/products/home/horno.webp", "category": "Hogar" }
+]

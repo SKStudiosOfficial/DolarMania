@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DolarMania — Catálogo Digital</title>
+  <meta name="description" content="Catálogo digital de DolarMania: teléfonos, computadoras, accesorios y hogar. Compra directa por WhatsApp." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container nav">
+      <button id="menuToggle" class="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="#inicio" class="brand" aria-label="Ir al inicio">
+        <img src="assets/logo.svg" alt="Logo DolarMania" class="brand-logo" />
+        <span class="brand-name">DolarMania</span>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#quienes-somos">Quiénes Somos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+
+    <header class="site-header"> ... </header>
+
+    <!--  sácalos del header y ponlos aquí -->
+    <nav id="mobileNav" class="nav-drawer" aria-hidden="true">
+    <div class="drawer-header">
+        <span>Menú</span>
+        <button id="menuClose" class="drawer-close" aria-label="Cerrar menú">&times;</button>
+    </div>
+    <a href="#inicio" class="drawer-link">Inicio</a>
+    <a href="#catalogo" class="drawer-link">Catálogo</a>
+    <a href="#quienes-somos" class="drawer-link">Quiénes Somos</a>
+    <a href="#contacto" class="drawer-link">Contacto</a>
+    </nav>
+    <div id="backdrop" class="backdrop" hidden></div>
+
+
+  <main id="inicio">
+    <!-- Hero / Banner -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Catálogo Digital <span class="gradient">DolarMania</span></h1>
+          <p>Explora nuestros productos, compara precios y compra al instante por WhatsApp.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#catalogo">Ver Catálogo</a>
+            <a class="btn btn-outline" id="whatsappHero" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-banner" aria-hidden="true">
+          <img src="assets/hero.webp" alt="" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Destacados -->
+    <section class="destacados">
+      <div class="container">
+        <h2>Productos Destacados</h2>
+        <div id="featuredGrid" class="product-grid"></div>
+      </div>
+    </section>
+
+    <!-- Catálogo -->
+    <section id="catalogo" class="catalogo">
+      <div class="container">
+        <div class="catalog-header">
+          <h2>Catálogo de Productos</h2>
+          <div class="tools">
+            <div class="search">
+              <input id="searchInput" type="search" placeholder="Buscar producto..." aria-label="Buscar producto" />
+            </div>
+            <div class="filters" role="tablist" aria-label="Filtrar por categoría">
+              <!-- Chips generados por JS -->
+              <button class="chip is-active" data-cat="Todos" role="tab" aria-selected="true">Todos</button>
+              <button class="chip" data-cat="Teléfonos" role="tab">Teléfonos</button>
+              <button class="chip" data-cat="Computadoras" role="tab">Computadoras</button>
+              <button class="chip" data-cat="Accesorios" role="tab">Accesorios</button>
+              <button class="chip" data-cat="Hogar" role="tab">Hogar</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="productGrid" class="product-grid"></div>
+
+                <!-- Paginación -->
+        <nav id="pagination" class="pagination" aria-label="Paginación"></nav>
+
+
+        <div class="catalog-footer">
+          <small>¿No encuentras algo? Escríbenos por WhatsApp y te asesoramos.</small>
+          <a class="btn btn-secondary" id="whatsappCatalog" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiénes Somos -->
+    <section id="quienes-somos" class="about">
+      <div class="container about-grid">
+        <div>
+          <h2>Quiénes Somos</h2>
+          <p>
+            En <strong>DolarMania</strong> nos enfocamos en ofrecerte tecnología y artículos para el hogar al mejor precio,
+            con atención cercana y confiable. Nuestra misión es facilitar tus compras con un catálogo claro, precios justos
+            y comunicación directa.
+          </p>
+          <ul class="values">
+            <li><strong>Calidad:</strong> productos seleccionados y garantía según fabricante.</li>
+            <li><strong>Confianza:</strong> atención personalizada y soporte post-venta.</li>
+            <li><strong>Rapidez:</strong> respuesta inmediata por WhatsApp.</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <h3>Nuestra Historia</h3>
+          <p>
+            Nacimos como un pequeño emprendimiento local y hoy somos tu aliado tecnológico.
+            Crecemos escuchando a nuestros clientes y mejorando día a día.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <h2>Contacto</h2>
+          <form id="contactForm" class="form">
+            <div class="form-row">
+              <label for="name">Nombre</label>
+              <input id="name" name="name" type="text" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-row">
+              <label for="phone">Teléfono</label>
+              <input id="phone" name="phone" type="tel" placeholder="+58 412..." />
+            </div>
+            <div class="form-row">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+              <a id="whatsappContact" class="btn btn-secondary" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </form>
+          <div class="socials">
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="TikTok">TikTok</a>
+          </div>
+        </div>
+
+        <div class="map-card">
+          <h3>¿Dónde estamos?</h3>
+          <p>Dirección: Tu dirección física aquí.</p>
+          <div class="map-wrap">
+            <iframe
+              title="Mapa DolarMania"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=DolarMania&output=embed">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot">
+      <span>&copy; <span id="year"></span> DolarMania. Todos los derechos reservados.</span>
+      <a href="#inicio" class="to-top" aria-label="Volver arriba">↑</a>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a id="whatsappFloat" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"></a>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
