@@ -250,7 +250,7 @@ html, body {
 }
 
 /* --- Fix flotante WhatsApp (override final) --- */
-a#whatsappFloat.whatsapp-float{
+#whatsappFloat.whatsapp-float{
   position: fixed !important;
   right: 18px !important;
   bottom: 18px !important;
@@ -262,7 +262,7 @@ a#whatsappFloat.whatsapp-float{
   z-index: 1100 !important; /* por encima de backdrop(1000) y drawer(1001) */
 }
 
-a#whatsappFloat.whatsapp-float img{
+#whatsappFloat.whatsapp-float img{
   max-width: 60%;
   max-height: 60%;
   pointer-events: none;
@@ -273,5 +273,6 @@ html, body{
   filter: none !important;
   perspective: none !important;
 }
+
 
 
