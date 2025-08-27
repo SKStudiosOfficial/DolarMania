@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DolarMania — Catálogo Digital</title>
-  <meta name="description" content="Catálogo digital de DolarMania: teléfonos, computadoras, accesorios y hogar. Compra directa por WhatsApp." />
+  <title>DolarMania — Todo por 1$</title>
+  <meta name="description" content="DolarMania: todo por 1$. Catálogo digital con cosmeticos, accesorios y más. Compra directa por WhatsApp." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="assets/favicon.svg" />
 </head>
@@ -29,16 +29,16 @@
       </nav>
     </div>
     
-    <!--  sácalos del header y ponlos aquí -->
+    <!--  Menú móvil -->
     <nav id="mobileNav" class="nav-drawer" aria-hidden="true">
-    <div class="drawer-header">
+      <div class="drawer-header">
         <span>Menú</span>
         <button id="menuClose" class="drawer-close" aria-label="Cerrar menú">&times;</button>
-    </div>
-    <a href="#inicio" class="drawer-link">Inicio</a>
-    <a href="#catalogo" class="drawer-link">Catálogo</a>
-    <a href="#quienes-somos" class="drawer-link">Quiénes Somos</a>
-    <a href="#contacto" class="drawer-link">Contacto</a>
+      </div>
+      <a href="#inicio" class="drawer-link">Inicio</a>
+      <a href="#catalogo" class="drawer-link">Catálogo</a>
+      <a href="#quienes-somos" class="drawer-link">Quiénes Somos</a>
+      <a href="#contacto" class="drawer-link">Contacto</a>
     </nav>
     <div id="backdrop" class="backdrop" hidden></div>
 
@@ -48,8 +48,8 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <h1>Catálogo Digital <span class="gradient">DolarMania</span></h1>
-          <p>Explora nuestros productos, compara precios y compra al instante por WhatsApp.</p>
+          <h1>Todo por <span class="gradient">1&nbsp;$</span> en DolarMania</h1>
+          <p>Explora nuestro catálogo:cosmeticos, accesorios y más. ¡Nada cuesta más de 1 $!</p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="#catalogo">Ver Catálogo</a>
             <a class="btn btn-outline" id="whatsappHero" target="_blank" rel="noopener">WhatsApp</a>
@@ -64,7 +64,8 @@
     <!-- Destacados -->
     <section class="destacados">
       <div class="container">
-        <h2>Productos Destacados</h2>
+        <h2>Lo Mejor por Solo 1&nbsp;$</h2>
+        <p>Productos destacados, siempre al mismo precio: 1 dólar.</p>
         <div id="featuredGrid" class="product-grid"></div>
       </div>
     </section>
@@ -73,7 +74,7 @@
     <section id="catalogo" class="catalogo">
       <div class="container">
         <div class="catalog-header">
-          <h2>Catálogo de Productos</h2>
+          <h2>Catálogo de Productos — Todo a 1&nbsp;$</h2>
           <div class="tools">
             <div class="search">
               <input id="searchInput" type="search" placeholder="Buscar producto..." aria-label="Buscar producto" />
@@ -91,12 +92,11 @@
 
         <div id="productGrid" class="product-grid"></div>
 
-                <!-- Paginación -->
+        <!-- Paginación -->
         <nav id="pagination" class="pagination" aria-label="Paginación"></nav>
 
-
         <div class="catalog-footer">
-          <small>¿No encuentras algo? Escríbenos por WhatsApp y te asesoramos.</small>
+          <small>¿No encuentras algo? Escríbenos por WhatsApp y recuerda: todo cuesta solo 1 $.</small>
           <a class="btn btn-secondary" id="whatsappCatalog" target="_blank" rel="noopener">Hablar por WhatsApp</a>
         </div>
       </div>
@@ -108,21 +108,20 @@
         <div>
           <h2>Quiénes Somos</h2>
           <p>
-            En <strong>DolarMania</strong> nos enfocamos en ofrecerte tecnología y artículos para el hogar al mejor precio,
-            con atención cercana y confiable. Nuestra misión es facilitar tus compras con un catálogo claro, precios justos
-            y comunicación directa.
+            En <strong>DolarMania</strong> creemos que la mejor tecnología y artículos no tienen que ser caros.
+            Por eso <strong>todo en nuestro catálogo cuesta solo 1 $</strong>. Queremos que disfrutes comprando sin preocuparte por el precio.
           </p>
           <ul class="values">
-            <li><strong>Calidad:</strong> productos seleccionados y garantía según fabricante.</li>
-            <li><strong>Confianza:</strong> atención personalizada y soporte post-venta.</li>
-            <li><strong>Rapidez:</strong> respuesta inmediata por WhatsApp.</li>
+            <li><strong>Calidad:</strong> productos útiles y funcionales al mejor precio posible.</li>
+            <li><strong>Confianza:</strong> atención personalizada y compras sin sorpresas.</li>
+            <li><strong>Accesibilidad:</strong> todos nuestros productos, sin excepción, a 1 $.</li>
           </ul>
         </div>
         <div class="about-card">
           <h3>Nuestra Historia</h3>
           <p>
-            Nacimos como un pequeño emprendimiento local y hoy somos tu aliado tecnológico.
-            Crecemos escuchando a nuestros clientes y mejorando día a día.
+            Nacimos como un pequeño emprendimiento local con una idea sencilla: ofrecer todo por 1 $.
+            Hoy seguimos creciendo, manteniendo siempre esa promesa clara y directa.
           </p>
         </div>
       </div>
@@ -160,7 +159,7 @@
 
         <div class="map-card">
           <h3>¿Dónde estamos?</h3>
-          <p>Dirección: (Direccion fisica del local).</p>
+          <p>Dirección: (Dirección física del local).</p>
           <div class="map-wrap">
             <iframe
               title="Mapa DolarMania"
@@ -177,20 +176,16 @@
 
   <footer class="site-footer">
     <div class="container foot">
-      <span>&copy; <span id="year"></span> DolarMania. Todos los derechos reservados - Hecho por SKLabs.</span>
+      <span>&copy; <span id="year"></span> DolarMania. Todos los derechos reservados - Hecho por SKLabstudios.</span>
       <a href="#inicio" class="to-top" aria-label="Volver arriba">↑</a>
     </div>
   </footer>
-      <!-- Botón flotante WhatsApp -->
- <a id="whatsappFloat" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  
+  <!-- Botón flotante WhatsApp -->
+  <a id="whatsappFloat" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
     <img src="assets/whatsapp.webp" alt="WhatsApp">
-</a>
+  </a>
+  
   <script src="script.js" defer></script>
 </body>
 </html>
-
-
-
-
-
-
